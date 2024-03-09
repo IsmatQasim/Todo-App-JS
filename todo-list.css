@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html {
+    color: #fff;
+    font-size: 62.5%;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+    /* background-color: #1b1b1d; */
+}
+li{
+    cursor: pointer;
+    list-style-type: style type; 
+    margin: 2rem 0 ;
+    font-weight: 500;
+    color: white;
+    &:hover{
+        color: #d5e44d;
+    }
+}
+
+.main-todo-div{
+    width: 36rem;
+    display: grid;
+    grid-template-columns: 1fr 0.3fr;
+    align-items: center;
+    height: auto;
+    
+}
+button ,.btn{
+    height: 5rem;
+    background-color: #d5e44d;
+    padding: 0.6rem 2.4rem;
+    border-radius: 10rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    &:hover{
+        background-color: #fff;
+        color:  #c5d33f;
+    }
+}
+h1{
+    font-size: 3.6rem;
+    margin-top: 4.8rem;
+    margin-right: 1%;
+    font-family:  "EB Garamond", serif !important;
+    letter-spacing: 5px;
+    font-style: italic;
+}
+hr{
+    margin-bottom: 3.2rem;
+}
+p,
+li,
+button {
+    font-size: 1.7rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.6;
+}
+
+input{
+    padding: 6px 2px;
+    min-width: 32rem;
+    font-size: 18px;
+    border-radius: 10rem;
+    border: none;
+    margin-left: 1.2rem;
+    padding: 10px;
+    border: none;
+}
+.deleteBtn{
+      margin-left: 94%; 
+      padding-right: 43px;
+
+}
+li:hover + .deleteBtn{
+    box-shadow: inset 0 0 0 0.2rem #d5e44d;
+    color: #d5e44d;
+}
+body{ 
+    background-image: repeating-radial-gradient(circle at center center, transparent 0px, transparent 8px,rgba(255,255,255,0.05) 8px, rgba(255,255,255,0.05) 11px,transparent 11px, transparent 17px,rgba(255,255,255,0.05) 17px, rgba(255,255,255,0.05) 25px,transparent 25px, transparent 38px,rgba(255,255,255,0.05) 38px, rgba(255,255,255,0.05) 42px),repeating-radial-gradient(circle at center center, rgb(0,0,0) 0px, rgb(0,0,0) 11px,rgb(0,0,0) 11px, rgb(0,0,0) 19px,rgb(0,0,0) 19px, rgb(0,0,0) 24px,rgb(0,0,0) 24px, rgb(0,0,0) 33px,rgb(0,0,0) 33px, rgb(0,0,0) 44px,rgb(0,0,0) 44px, rgb(0,0,0) 46px); background-size: 60px 60px;
+}
